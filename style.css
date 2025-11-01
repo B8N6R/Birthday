@@ -329,3 +329,48 @@ body {
         font-size: 1.1rem !important;
     }
 } 
+/* 让正反面标题都保持单行、尽量不在中文间断开 */
+.card-front h1,
+.card-back h2 {
+  text-align: center;
+  white-space: nowrap !important; /* 关键：禁止换行 */
+  word-break: keep-all;           /* 尽量不在 CJK 字符间断行 */
+  display: inline-block;          /* 便于计算宽度 */
+  max-width: 100%;
+  font-size: clamp(28px, 6vw, 40px); /* 空间不够时自动稍微变小 */
+}
+
+/* 减少内边距，给标题多一点真实宽度 */
+.card-front,
+.card-back {
+  padding: 24px 20px !important;  /* 从 40px 降到 20px */
+}
+
+/* 如果标题里夹了 emoji，缩小一点避免把行挤爆（可选） */
+.card-front h1 .emoji,
+.card-back h2 .emoji {
+  font-size: 0.9em;
+}
+
+/* （可选）若仍嫌窄，可以把卡片宽一点；移动端仍自适应 */
+.card {
+  width: min(92vw, 520px); /* 桌面可到 520px，手机用视口宽度 */
+}
+/* 放到 CSS 最后 */
+.card-back h2 {
+  display: inline-flex;           /* 标题自身就是一行容器 */
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+  white-space: nowrap;            /* 禁止换行 */
+  word-break: keep-all;
+  font-size: clamp(26px, 5.5vw, 36px);  /* 自适应缩放，避免被挤换行 */
+  line-height: 1.15;
+}
+
+.card-back h2::before,
+.card-back h2::after {
+  content: "🎂";                  /* 左右两边的蛋糕 */
+  font-size: .9em;                /* 稍微小一点，腾出宽度 */
+  flex: 0 0 auto;
+}
