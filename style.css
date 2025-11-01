@@ -386,3 +386,7 @@ body {
   transform: rotateY(180deg);
   text-align: center;
 }
+.card-back {
+  justify-content: flex-start !important; 
+  padding-top: 45px !important;  /* 从 100px 改为 45px，让它只下移一点 */
+}
