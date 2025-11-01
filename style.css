@@ -24,7 +24,7 @@ body {
 }
 
 .card {
-    width: 350px;
+    width: 500px;
     height: 450px;
     position: relative;
     cursor: pointer;
