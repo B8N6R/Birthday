@@ -48,12 +48,14 @@ body {
     align-items: center;
     padding: 40px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    text-align: center;;
 }
 
 .card-front {
     background: linear-gradient(135deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
     background-size: 400% 400%;
     animation: gradientShift 3s ease infinite;
+    text-align: center;
 }
 
 .card-back {
