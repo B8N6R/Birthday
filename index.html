@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 生日快乐！</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-front">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+                <h1>宝宝生日快乐</h1>
+                <p>点击查看祝福</p>
+            </div>
+            
+            <div class="card-back">
+                <h2>🎂 琪琪宝宝生日快乐 🎂</h2>
+                <p class="age">🎉 桃李之年，风华正茂 🎉</p>
+                <p>愿你的生日充满欢乐和温馨</p>
+                <p>愿你的每一天都如今天般美好！</p>
+                <div class="wishes">
+                    <p>祝你：</p>
+                    <ul>
+                        <li>身体健康，万事如意</li>
+                        <li>学业有成，前程似锦</li>
+                        <li>快乐每一天，幸福每一刻</li>
+                        <li>所有的愿望都能实现</li>
+                        <li>二十岁的人生更加精彩</li>
+                    </ul>
+                </div>
+                <p class="signature">—— 来自CYB的祝福</p>
+                <button class="close-btn">关闭</button>
+            </div>
+        </div>
+        
+        <div class="balloons">
+            <div class="balloon balloon-1"></div>
+            <div class="balloon balloon-2"></div>
+            <div class="balloon balloon-3"></div>
+            <div class="balloon balloon-4"></div>
+            <div class="balloon balloon-5"></div>
+        </div>
+        
+        <!-- 音乐控制 -->
+        <div class="music-control">
+            <button id="musicBtn" class="music-btn">🎵</button>
+        </div>
+        
+        <!-- 背景音乐 -->
+        <audio id="birthdayMusic" loop>
+            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+            <!-- 备用音频源 -->
+            <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIG2m98OScTgwOUarm7blmGgU7k9n1unEiBC13yO/eizEIHWq+8+OWT" type="audio/wav">
+        </audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
