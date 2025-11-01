@@ -64,6 +64,11 @@ body {
     text-align: center;
 }
 
+.card-back {
+  justify-content: flex-start; /* 改成顶部对齐 */
+  padding-top: 80px;           /* 用 padding 控制整体向下偏移 */
+}
+
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
