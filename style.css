@@ -62,11 +62,8 @@ body {
     background: linear-gradient(135deg, #fff5f5, #ffeaa7);
     transform: rotateY(180deg);
     text-align: center;
-}
-
-.card-back {
-  justify-content: flex-start; /* 改成顶部对齐 */
-  padding-top: 80px;           /* 用 padding 控制整体向下偏移 */
+    justify-content: flex-start;
+    padding-top: 80px;
 }
 
 @keyframes gradientShift {
