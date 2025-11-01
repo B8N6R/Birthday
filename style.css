@@ -376,3 +376,13 @@ body {
   font-size: .9em;                /* 稍微小一点，腾出宽度 */
   flex: 0 0 auto;
 }
+/* 让整张卡片的背面内容整体往下移动 */
+.card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start !important; /* 顶部开始布局 */
+  padding-top: 100px !important;          /* 整体下移 */
+  transform: rotateY(180deg);
+  text-align: center;
+}
